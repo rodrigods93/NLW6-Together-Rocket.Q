@@ -2,6 +2,7 @@
     do proprio navegador */
     margin: 0;
     padding: 0;
+    border: none;
     text-decoration: none;
     box-sizing: border-box;
 }
@@ -30,6 +31,7 @@ body {
     height: 100vh; /* Ele pega de onde inicia a tela e de onde termina  pega 100% da tela do computador*/
     /*width: 100vw;  view width pega 100% da largura */
     background: var(--background);
+    display: flex;
 }
 
 body, button, input, textarea {
@@ -46,8 +48,8 @@ body, button, input, textarea {
 }
 
 .sr-only {
-    display: none;
-    height: absolute;
+    position: absolute;
+    height: 1px;
     width: 1px;
     padding: 0;
     margin: -1px;
